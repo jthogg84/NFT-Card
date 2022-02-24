@@ -1,0 +1,144 @@
+:root{
+
+    --softblue-pri:hsl(215, 51%, 70%);
+    --cyan-pri:hsl(178, 100%, 50%);
+
+    --darkblue-main-bg: hsl(217, 54%, 11%);
+    --darkblue-card-bg: hsl(216, 50%, 16%);
+    --darkblue-line: hsl(215, 32%, 27%);
+    --White: hsl(0, 0%, 100%);
+
+
+}
+
+
+*,*::after,*::before{
+    box-sizing: border-box;
+}
+
+body{
+    color:var(--softblue-pri);
+    font-family: 'Outfit', sans-serif;
+}
+
+h1{
+    color: var(--White);
+    font-size: 24px;
+    font-weight: 400;
+}
+
+
+p{
+    font-size: 18px;
+    font-weight: 300;
+}
+
+
+.flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.eth-img{
+    width:15px;
+display: block;
+height: 20px;
+margin-right: .75rem;
+}
+
+.clock{
+    width:15px;
+    display: block;
+    height: 20px;
+    margin-right: .75rem;
+}
+
+
+
+.eth{
+    color: var(--cyan-pri);
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.profile-info{
+    display: flex;
+    align-items: center;
+    border-top: solid 2px var(--darkblue-line);
+    padding-top: 1rem;
+}
+
+.profile-info  span{
+    color:var(--White)
+}
+
+.profile-info > img{
+    border: solid white 2px;
+    border-radius: 50%;
+    width: 40px;
+    margin-right: 1rem;
+}
+
+.center-all{
+    justify-content: center;
+    align-items: center;
+}
+
+body{
+    font-family: 'Outfit', sans-serif;
+    background-color: var(--darkblue-main-bg);
+    height: 100vh;
+
+}
+
+.nft-card{
+    border-radius: 10px;
+    width: 376px;
+    padding: 1.2rem;
+    background-color: var(--darkblue-card-bg);
+}
+
+.nft-imgs{
+    position: relative;
+}
+
+.nft-img{
+    
+    border-radius: 10px;
+    width: 100%;
+    height: auto;
+}
+
+.view{
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    top:45%;
+    left:50%;
+    transform: translate(-50%);
+    
+}
+
+.hover:hover{
+    color: var(--cyan-pri);
+    cursor: pointer;
+}
+
+
+.img-hover{
+    border-radius: 10px;
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    background-color: hsla(178, 100%, 50%, 0.295);
+    z-index: 10;
+    opacity: 0;
+    transition: all 250ms ease-in-out;
+}
+    
+
+.img-hover:hover{
+    opacity: 1;
+}
